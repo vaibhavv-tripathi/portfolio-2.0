@@ -1,0 +1,147 @@
+body {
+  background: #100F0F;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: #5b5b5b;
+}
+
+#title {
+  padding-top: 3%;
+}
+
+#expertise, #projects{
+  padding: 5rem 0;
+}
+
+/* Title Section */
+.nav-item {
+  font-size: 1.5rem;
+  animation-name: nav-animation;
+  animation-duration: 3s;
+}
+
+.heading {
+  padding: 6rem 0;
+}
+
+.title-text {
+  color: #5b5b5b;
+  animation-name: title-animation;
+  animation-duration: 1s;
+  line-height: 1.5;
+  padding-top: 5rem
+}
+
+.developer-image {
+  height: 20rem;
+  margin-left: 30%;
+  animation-name: developer-img;
+  animation-duration: 1s;
+}
+
+
+/* Skill Section */
+
+.skill-img {
+  height: 5rem;
+  margin: 20px;
+  animation-name: skills-icon-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+/* Project Section */
+
+.project-img {
+  height: 8rem;
+  width: 15rem;
+  margin-bottom: 5px;
+  animation-name: project-img-animation;
+  animation-duration: 1s;
+}
+
+.url-text {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+.url-text:hover {
+    color: #5b5b5b;
+}
+
+.project-img:hover {
+  opacity: 0.5;
+}
+/*
+@media (max-width: 991px) {
+  .project-img {
+    height: 7rem;
+    width: 9rem;
+  }
+}
+@media (max-width: 830px) {
+  .developer-image {
+    height: 18rem;
+  }
+
+}
+
+@media (max-width: 710px) {
+  .developer-image {
+    height: 17rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .developer-image {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .developer-image {
+    height: 13rem;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 560px) {
+  .developer-image {
+    display: none;
+  }
+  .skill-img{
+    height: 3rem;
+  }
+  .project-img {
+    height: 5rem;
+    width: 6rem;
+    padding: 1px;
+  }
+  body {
+    background-color: red;
+  }
+} */
+
+@keyframes title-animation {
+  from {transform: translateX(-100px);}
+  to {transform: translateX(0PX);}
+}
+
+@keyframes  developer-img{
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+@keyframes nav-animation {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+@keyframes skills-icon-animation {
+  0% {transform: scale(1); }
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1); }
+
+}
