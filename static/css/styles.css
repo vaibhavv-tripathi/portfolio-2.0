@@ -45,11 +45,11 @@ body {
 
 .skill-img {
   height: 5rem;
+  width: 5rem;
   margin: 20px;
   animation-name: skills-icon-animation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-
 }
 
 /* Project Section */
@@ -74,13 +74,21 @@ body {
 .project-img:hover {
   opacity: 0.5;
 }
-/*
-@media (max-width: 991px) {
+
+@media (max-width: 994px) {
   .project-img {
     height: 7rem;
-    width: 9rem;
+    width: 12rem;
   }
 }
+
+@media (max-width: 575px) {
+  .skill-img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+/*
 @media (max-width: 830px) {
   .developer-image {
     height: 18rem;
